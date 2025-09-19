@@ -65,7 +65,7 @@ RUN \
     xorg-x11-server-Xvfb \
     xorg-x11-server-Xorg \
     mesa-dri-drivers \
-    glx-utils\
+    glx-utils \
   && \
 
   #
