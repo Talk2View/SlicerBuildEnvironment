@@ -12,6 +12,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
   #
+  # Install dnf and ccache
+  #
+  yum install -y epel-release && \
+  yum install -y \
+    dnf \
+    ccache \
+  && \
+  #
   # Qt dependencies:
   #
   # * https://doc.qt.io/qt-5/linux-requirements.html
