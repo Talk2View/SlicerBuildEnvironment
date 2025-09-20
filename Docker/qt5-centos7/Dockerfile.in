@@ -12,11 +12,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
   #
-  # Install dnf and ccache
+  # Install ccache
   #
-  yum install -y epel-release && \
   yum install -y \
-    dnf \
     ccache \
   && \
   #
@@ -65,7 +63,7 @@ RUN \
     xorg-x11-server-Xvfb \
     xorg-x11-server-Xorg \
     mesa-dri-drivers \
-    glx-utils \
+    glx-utils\
   && \
 
   #
