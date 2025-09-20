@@ -10,6 +10,12 @@ ARG QT_ACCOUNT_PASSWORD
 
 RUN \
   #
+  # Install ccache
+  #
+  dnf install -y \
+    ccache \
+  && \
+  #
   # Qt dependencies:
   #
   # * https://doc.qt.io/qt-5/linux-requirements.html

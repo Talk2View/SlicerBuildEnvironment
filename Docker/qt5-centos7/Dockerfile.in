@@ -12,6 +12,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
   #
+  # Install ccache
+  #
+  yum install -y \
+    ccache \
+  && \
+  #
   # Qt dependencies:
   #
   # * https://doc.qt.io/qt-5/linux-requirements.html
